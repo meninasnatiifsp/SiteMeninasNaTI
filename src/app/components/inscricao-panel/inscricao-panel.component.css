@@ -1,0 +1,54 @@
+article.subscription {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    background-color: #fff;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    border-radius: 10px;
+    margin: 50px 0 70px 0;
+}
+
+article.subscription>p {
+    font-size: 20pt;
+    text-align: center;
+    width: 100%;
+    color: var(--roxo);
+    font-weight: 700;
+    padding: 30px 0 20px 0;
+}
+
+article.subscription>div {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px 0;
+}
+
+article.subscription>div>button {
+    position: relative;
+    display: flex;
+    border: 1px solid var(--roxo);
+    border-radius: 5px;
+    background-color: none;
+    background: none;
+    color: var(--roxo);
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+article.subscription>div>button:hover {
+    color: #fff;
+    border-color: #fff;
+    background-color: var(--roxo);
+}
+
+@media (max-width: 768px) {
+    article.subscription {
+        margin: 50px;
+    }
+}

@@ -1,0 +1,7 @@
+section#redes-sociais {
+    height: fit-content;
+}
+
+section.content {
+    background-color: var(--rosa);
+}

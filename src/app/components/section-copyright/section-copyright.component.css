@@ -1,0 +1,23 @@
+:host {
+    height: 30px;
+    align-self: flex-end;
+    justify-content: left;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+div {
+    display: flex;
+}
+
+div>p {
+    font-size: max(0.8vw, 10px);
+    color: #fff;
+    font-weight: 700;
+    pointer-events: none;
+    margin: 0 20px 0 0;
+}

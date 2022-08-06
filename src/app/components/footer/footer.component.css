@@ -1,0 +1,29 @@
+/*-| Footer |-*/
+
+footer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    background: var(--gradiente-laranja);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer>div {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>div>p {
+    font-size: max(0.8vw, 10px);
+    color: #fff;
+    font-weight: 700;
+    pointer-events: none;
+    margin: 0 20px 0 0;
+}

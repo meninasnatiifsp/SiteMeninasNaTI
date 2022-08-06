@@ -1,0 +1,177 @@
+/*-| Header |-*/
+
+header {
+    position: fixed;
+    display: flex;
+    width: 95%;
+    height: 60px;
+    background-color: var(--branco);
+    top: 21px;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    border-radius: 5px;
+    z-index: 999;
+    padding: 5px 50px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    transition: .5s ease-in-out;
+}
+
+header.sticky {
+    transform: translate(-50%, 0%);
+}
+
+header>div.logo-container {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    height: 100%;
+    cursor: pointer;
+}
+
+header>nav {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+
+header>nav>ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+header>nav>ul>li {
+    position: relative;
+    display: block;
+    list-style: none;
+    margin: 0 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+header>nav>ul>li>a {
+    font-size: 12pt;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 300;
+}
+
+header>nav>ul>li:hover>a {
+    opacity: .5;
+}
+
+header>nav>ul>li>a.on {
+    opacity: .5;
+}
+
+header>nav>ul>li>a {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header>nav>ul>li>a>.open {
+    position: relative;
+    display: flex;
+    width: 15px;
+    height: 15px;
+    margin: 0 0 0 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+header>nav>ul>li>a>.open>div {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 3px;
+    background-color: var(--laranja);
+}
+
+header>nav>ul>li>a>.open>div:nth-child(2) {
+    height: 100%;
+    width: 3px;
+    transition: .1s ease-in-out;
+}
+
+header>nav>ul>li>a>.open>div:nth-child(2).on {
+    transform: rotate(90deg);
+}
+
+.header-button {
+    display: none;
+    cursor: pointer;
+    width: min-content;
+    margin: 0;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 5px 20px;
+    }
+
+    header>nav {
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        top: 0px;
+        left: 0;
+        margin: 10px 0 0 0;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        visibility: hidden;
+        transition: all .5s ease-in-out;
+        opacity: 0;
+    }
+
+    header>nav.onR {
+        visibility: visible;
+        top: 60px;
+        opacity: 1;
+    }
+
+    .header-button {
+        display: inline-block;
+    }
+
+    header>nav>ul {
+        flex-direction: column;
+    }
+
+    header>nav>ul>li {
+        margin: 10px 20px;
+    }
+
+    header>nav>ul>li>ul.drop-down {
+        position: relative;
+    }
+}

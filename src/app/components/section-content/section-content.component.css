@@ -1,0 +1,160 @@
+article {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin: 60px 50px 60px 50px;
+    flex-wrap: wrap;
+}
+
+article>div {
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+article>div>img {
+    object-fit: cover;
+    height: 100%;
+}
+
+article>div>p {
+    padding: 40px;
+    font-weight: 300;
+    text-align: right;
+}
+
+article>div:nth-child(2)>p {
+    text-align: left;
+}
+
+article.social-medias {
+    height: fit-content;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+article.social-medias>div {
+    position: relative;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    transition: .1s ease-in-out;
+    margin: 20px 5px;
+}
+
+article.social-medias>div:hover {
+    transform: scale(1.03);
+}
+
+article.social-medias>div.insta {
+    background: var(--insta-cor);
+}
+
+article.social-medias>div.face {
+    background: var(--face-cor);
+}
+
+article.social-medias>div.yt {
+    background: var(--youtube-cor);
+}
+
+article.social-medias>div.tt {
+    background: var(--tiktok-cor);
+}
+
+article.social-medias>div>div {
+    position: relative;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+article.social-medias>div>div>i {
+    color: #fff;
+    font-size: 40pt;
+    pointer-events: none;
+}
+
+article.social-medias>div>div>p {
+    font-size: 30pt;
+    margin: 10px 0;
+    pointer-events: none;
+}
+
+article.subscription {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    background-color: #fff;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+article.subscription>p {
+    font-size: 20pt;
+    text-align: center;
+    width: 100%;
+    color: var(--roxo);
+    font-weight: 700;
+    padding: 30px 0 20px 0;
+}
+
+article.subscription>div {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px 0;
+}
+
+article.subscription>div>button {
+    position: relative;
+    display: flex;
+    border: 1px solid var(--roxo);
+    border-radius: 5px;
+    background-color: none;
+    background: none;
+    color: var(--roxo);
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+article.subscription>div>button:hover {
+    color: #fff;
+    border-color: #fff;
+    background-color: var(--roxo);
+}
+
+@media (max-width: 768px) {
+    article{
+        margin: 60px 0;
+        height: fit-content;
+    }
+    article>div {
+        width: 100%;
+    }
+
+    article>div>p {
+        text-align: center !important;
+    }
+
+    article>div>img {
+        padding: 0px;
+    }
+}

@@ -1,0 +1,26 @@
+section.landing {
+    background: var(--gradiente-laranja);
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    section.landing div.content-landing {
+        height: fit-content;
+        width: min-content;
+        padding: 30px 0 0 0;
+    }
+
+    section.landing div.content-landing>div {
+        min-width: 300px;
+    }
+
+    section.landing div.content-landing>div:nth-child(2) {
+        margin: 30px 0 0 0;
+    }
+
+    section.landing div.content-landing>div>div>* {
+        text-align: center;
+    }
+}

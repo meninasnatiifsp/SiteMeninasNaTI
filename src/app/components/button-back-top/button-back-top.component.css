@@ -1,0 +1,45 @@
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.backTop.sticky {
+    visibility: visible;
+    bottom: 20px;
+    right: 20px;
+    transition: .5s ease-in-out;
+}
+
+.backTop {
+    visibility: hidden;
+    position: fixed;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: var(--branco);
+    border-radius: 50%;
+    bottom: -100px;
+    right: -100px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.backTop:hover {
+    background-color: var(--rosa);
+    opacity: .7;
+}
+
+.backTop:hover>i {
+    color: var(--branco);
+}
+
+.backTop>i {
+    position: relative;
+    display: flex;
+    color: var(--rosa);
+    font-size: 14pt;
+    pointer-events: none;
+}

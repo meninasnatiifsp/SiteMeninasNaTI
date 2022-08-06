@@ -1,0 +1,86 @@
+:host {
+    height: fit-content;
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+article.social-medias {
+    justify-content: space-between;
+    padding: 50px 0;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin: 50px;
+}
+
+article.social-medias>div {
+    position: relative;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    transition: .1s ease-in-out;
+    margin: 20px 5px;
+}
+
+article.social-medias>div:hover {
+    transform: scale(1.03);
+}
+
+article.social-medias>div.insta {
+    background: var(--insta-cor);
+}
+
+article.social-medias>div.face {
+    background: var(--face-cor);
+}
+
+article.social-medias>div.yt {
+    background: var(--youtube-cor);
+}
+
+article.social-medias>div.tt {
+    background: var(--tiktok-cor);
+}
+
+article.social-medias>div>div {
+    position: relative;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+article.social-medias>div>div>i {
+    color: #fff;
+    font-size: 40pt;
+    pointer-events: none;
+}
+
+article.social-medias>div>div>p {
+    font-size: 30pt;
+    margin: 10px 0;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    article.social-medias {
+        padding: 50px 0;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    article.social-medias>div {
+        margin: 20px 5px;
+    }
+}

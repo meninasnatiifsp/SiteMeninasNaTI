@@ -1,0 +1,29 @@
+div>article {
+    position: relative;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    max-width: 500px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+div>article>h3 {
+    font-size: 20pt;
+    margin-top: 10px;
+    color: var(--branco);
+    pointer-events: none;
+}
+
+div>article>p {
+    font-size: max(1.2vw, 15px);
+    font-weight: 300;
+    padding: 20px 0;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    footer>div>article {
+        width: 90%;
+    }
+}
