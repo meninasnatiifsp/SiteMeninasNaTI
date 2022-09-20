@@ -2,4 +2,10 @@ h1 {
     font-size: 30pt;
     color: var(--branco);
     margin-top: 30px;
+    background-image: linear-gradient(60deg, orange, #e2e37f, #fafad9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: capitalize;
+    font-weight: 700;
 }

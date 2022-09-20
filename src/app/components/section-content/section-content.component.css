@@ -25,6 +25,7 @@ article>div>p {
     padding: 40px;
     font-weight: 300;
     text-align: right;
+    font-size: 15pt;
 }
 
 article>div:nth-child(2)>p {

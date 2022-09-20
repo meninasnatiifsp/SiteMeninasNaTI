@@ -1,0 +1,197 @@
+section {
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+
+    div.cards {
+        position: relative;
+        display: flex;
+        width: 75%;
+        height: 100%;
+        flex-wrap: wrap;
+        margin: 50px 0;
+
+        div.divider {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            width: 50%;
+            height: auto;
+            padding: 0 50px;
+
+            div.resume {
+                position: relative;
+                display: block;
+                height: fit-content;
+                width: 350px;
+
+                h2 {
+                    background-image: linear-gradient(60deg, var(--rosa), var(--roxo), var(--laranja));
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: 700;
+                    font-size: 25pt;
+                    width: fit-content;
+                    pointer-events: none;
+                }
+
+                p {
+                    color: black;
+                    font-size: 10pt;
+                    font-weight: 400;
+                    pointer-events: none;
+                }
+            }
+
+            div.cards-base {
+                position: relative;
+                display: flex;
+                width: fit-content;
+                height: fit-content;
+                width: fit-content;
+                justify-content: center;
+                align-items: center;
+                margin: 20px 0;
+
+                div.defaultCard {
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: left;
+                    padding: 20px;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    width: 350px;
+                    border-radius: 10px;
+                    border: none;
+
+                    div.img {
+                        position: relative;
+                        display: flex;
+                        width: 340px;
+                        height: 200px;
+                        overflow: hidden;
+                        border-radius: 10px !important;
+                        margin: 0 auto;
+                        border: none;
+
+                        img {
+                            position: relative;
+                            display: flex;
+                            object-fit: cover;
+                            height: 100%;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 17pt;
+                        font-weight: 600;
+                        pointer-events: none;
+                        margin: 10px 0;
+                        background-image: linear-gradient(60deg, var(--rosa), var(--roxo), var(--laranja));
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                    p {
+                        color: black;
+                        font-size: 10pt;
+                        font-weight: 400;
+                        pointer-events: none;
+                    }
+                }
+            }
+            div.end-cards {
+                position: relative;
+                display: flex;
+                width: 350px;
+                height: fit-content;
+                flex-wrap: wrap;
+
+                p {
+                    color: black;
+                    font-size: 10pt;
+                    font-weight: 400;
+                    pointer-events: none;
+                }
+
+                div {
+                    position: relative;
+                    display: flex;
+                    width: 100%;
+                    height: fit-content;
+
+                    p {
+                        position: relative;
+                        display: flex;
+                        width: fit-content;
+                        height: fit-content;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px 50px;
+                        border-radius: 5px;
+                        margin: 0;
+                        margin-right: 20px;
+                        background-color: #fff;
+                        color: #f54242;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                        transition: all 0.5s;
+                        cursor: pointer;
+                        pointer-events: fill !important;
+                        padding: 10px 30px !important;
+
+                        &:hover {
+                            transition: all 0.5s;
+                            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.1) 0px 8px 16px -8px;
+                            transform: scale(0.95);
+                        }
+
+                        &:nth-child(1) {
+                            background-image: linear-gradient(60deg, var(--laranja), #f54242);
+                            color: #fff;
+                        }
+
+                        &:nth-child(2) {
+                            border: 1px solid rgba(#f54242, 1);
+                        }
+
+                        a {
+                            color: inherit;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                justify-content: right;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    div.cards {
+        width: 100% !important;
+        padding: 0 30px;
+    }
+    div.divider {
+        width: 100% !important;
+        padding: 0 !important;
+        justify-content: center !important;
+
+        div.resume {
+            width: 100% !important;
+        }
+
+        div.end-cards {
+            width: 100% !important;
+            margin: 40px 0;
+
+            div {
+                justify-content: center !important;
+            }
+        }
+    }
+}

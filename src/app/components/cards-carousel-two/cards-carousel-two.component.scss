@@ -1,0 +1,78 @@
+:host {
+    width: 75%;
+
+    div {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 50px;
+
+        div.card {
+            position: relative;
+            display: flex;
+            width: 350px;
+            height: 250px;
+            margin: 20px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            border: none;
+            background-image: linear-gradient(60deg, var(--rosa), var(--roxo), var(--laranja));
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+
+            &:nth-child(odd) {
+                background-image: linear-gradient(60deg, var(--rosa), var(--roxo), var(--laranja));
+            }
+
+            &:nth-child(even) {
+                background-image: linear-gradient(60deg, var(--laranja), var(--rosa), var(--roxo));
+            }
+
+            h2 {
+                color: #fff;
+                font-weight: 700;
+                text-transform: capitalize;
+                width: fit-content;
+                font-size: 13pt;
+            }
+
+            p {
+                color: #fff;
+                font-weight: 200;
+                font-size: 12pt;
+                text-transform: capitalize;
+            }
+
+            p.button {
+                padding: 10px 20px;
+                border-radius: 10px;
+                background-color: #fff;
+                color: var(--laranja);
+                font-weight: 500;
+                margin-top: 10px;
+                transition: 0.3s;
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    font-size: 12pt;
+                    background-image: linear-gradient(60deg, var(--rosa), var(--roxo), var(--laranja));
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    letter-spacing: 1px;
+                    pointer-events: none;
+                }
+
+                &:hover {
+                    transition: 0.3s;
+                    transform: scale(0.95);
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 25px 20px -20px;
+                }
+            }
+        }
+    }
+}

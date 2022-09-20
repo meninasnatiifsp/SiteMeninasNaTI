@@ -31,6 +31,11 @@ import { ProjetosComponent } from './components/projetos/projetos.component';
 import { InscricaoComponent } from './components/inscricao/inscricao.component';
 import { RedesSociaisComponent } from './components/redes-sociais/redes-sociais.component';
 import { OficinasComponent } from './components/oficinas/oficinas.component';
+import { HtmlComponent } from './components/html/html.component';
+import { LandingHtmlComponent } from './components/landing-html/landing-html.component';
+import { GridBaseComponent } from './components/grid-base/grid-base.component';
+import { CardsWithTextComponent } from './components/cards-with-text/cards-with-text.component';
+import { SitesComponent } from './components/html/sites/sites.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +65,12 @@ import { OficinasComponent } from './components/oficinas/oficinas.component';
     ProjetosComponent,
     InscricaoComponent,
     RedesSociaisComponent,
-    OficinasComponent
+    OficinasComponent,
+    HtmlComponent,
+    LandingHtmlComponent,
+    GridBaseComponent,
+    CardsWithTextComponent,
+    SitesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,113 @@
+:host {
+    background-image: linear-gradient(60deg, white, whitesmoke);
+
+    section {
+        height: fit-content;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        div.title {
+            position: relative;
+            display: flex;
+            width: 75%;
+            height: fit-content;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 0;
+
+            p {
+                width: fit-content;
+                color: #fff;
+                font-size: 30pt;
+                text-align: center;
+                font-weight: 700;
+                background-image: linear-gradient(60deg, var(--rosa), var(--roxo), var(--laranja));
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                line-height: 40px;
+                margin: 0 !important;
+                padding: 5px 0;
+                text-transform: capitalize;
+                pointer-events: none;
+            }
+        }
+
+        div.container {
+            position: relative;
+            display: flex;
+            width: 75%;
+            height: fit-content;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-bottom: 50px;
+
+            div.card {
+                position: relative;
+                display: flex;
+                width: 350px;
+                height: 250px;
+                margin: 20px;
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                border: none;
+                background-image: linear-gradient(60deg, var(--rosa), var(--roxo), var(--laranja));
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+
+                &:nth-child(odd) {
+                    background-image: linear-gradient(60deg, var(--rosa), var(--roxo), var(--laranja));
+                }
+
+                &:nth-child(even) {
+                    background-image: linear-gradient(60deg, var(--laranja), var(--rosa), var(--roxo));
+                }
+
+                h2 {
+                    color: #fff;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    width: fit-content;
+                }
+
+                p {
+                    color: #fff;
+                    font-weight: 200;
+                    font-size: 15pt;
+                    text-transform: capitalize;
+                }
+
+                p.button {
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    background-color: #fff;
+                    color: var(--laranja);
+                    font-weight: 500;
+                    margin-top: 10px;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                        font-size: 13pt;
+                        background-image: linear-gradient(60deg, var(--rosa), var(--roxo), var(--laranja));
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        letter-spacing: 1px;
+                        pointer-events: none;
+                    }
+
+                    &:hover {
+                        transition: 0.3s;
+                        transform: scale(0.95);
+                        box-shadow: rgba(0, 0, 0, 0.15) 0px 25px 20px -20px;
+                    }
+                }
+            }
+        }
+    }
+}
