@@ -10,6 +10,7 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
 }
 
 dl, ol, ul{
