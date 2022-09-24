@@ -1,0 +1,9 @@
+:host {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+}
+
+main {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+}
