@@ -56,6 +56,10 @@ p {
 
 /*-| Template |-*/
 
+html{
+    overflow-x: hidden;
+}
+
 main {
     position: relative;
     display: block;
