@@ -36,6 +36,9 @@ import { LandingHtmlComponent } from './components/landing-html/landing-html.com
 import { GridBaseComponent } from './components/grid-base/grid-base.component';
 import { CardsWithTextComponent } from './components/cards-with-text/cards-with-text.component';
 import { SitesComponent } from './components/html/sites/sites.component';
+import { CardsCarouselThreeComponent } from './components/cards-carousel-three/cards-carousel-three.component';
+import { CoordenadoresComponent } from './components/coordenadores/coordenadores.component';
+import { InstParticipantesComponent } from './components/inst-participantes/inst-participantes.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +73,10 @@ import { SitesComponent } from './components/html/sites/sites.component';
     LandingHtmlComponent,
     GridBaseComponent,
     CardsWithTextComponent,
-    SitesComponent
+    SitesComponent,
+    CardsCarouselThreeComponent,
+    CoordenadoresComponent,
+    InstParticipantesComponent
   ],
   imports: [
     BrowserModule,

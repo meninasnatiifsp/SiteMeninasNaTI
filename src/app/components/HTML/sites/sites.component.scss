@@ -111,3 +111,13 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    div.container {
+        width: 90% !important;
+
+        div.card {
+            margin: 40px 0 !important;
+        }
+    }
+}

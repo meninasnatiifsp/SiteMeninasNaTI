@@ -35,7 +35,8 @@
                 font-weight: 700;
                 text-transform: capitalize;
                 width: fit-content;
-                font-size: 25pt;
+                font-size: 20pt;
+                text-align: center;
             }
 
             p {
@@ -84,15 +85,16 @@
         }
     }
 }
-@media (max-width: 768px) {
-    :host {
+@media (max-width: 768px){
+    :host{
         width: 90%;
 
-        div {
-            div.card {
-                width: 100% !important;
+        div{
+            div.card{
+                width: 100%;
+                height: fit-content;
                 margin: 20px !important;
             }
         }
-    }
+    }   
 }

@@ -124,7 +124,6 @@ section {
                             color: inherit;
                             width: fit-content;
                             height: fit-content;
-                            pointer-events: none;
                         }
                     }
                 }
@@ -168,11 +167,18 @@ section {
                 max-height: 250px;
             }
 
+            h2{
+                max-width: 80%;
+                margin: auto;
+            }
+
             div.buttons {
                 justify-content: space-evenly;
+                flex-direction: column;
 
                 p {
-                    margin: 0 !important;
+                    margin: 10px 0 !important;
+                    width: 80% !important;
                 }
             }
         }
